@@ -1,0 +1,196 @@
+body,html{
+    font-family: "Lato", sans-serif;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;  
+    font-size: 15px;
+    line-height: 1.5; 
+}
+p{
+    word-spacing: 3px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+}
+.contaner{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media(min-width:768px){
+    .contaner{
+        width: 750px;
+    }
+}
+@media(min-width:992px){
+    .contaner{
+        width: 970px;
+    }
+}
+@media(min-width:1200px){
+    .contaner{
+        width: 1170px;
+    }
+}
+/* start nav */
+.nav{   
+    background-color: #fff;
+    box-shadow: 0 0 6px 0.5px black;
+    padding: 5px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav ul{
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.nav li{
+    float: left;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 12px 24px;
+    letter-spacing: 4px;
+}
+ul b{
+    font-weight: 900;
+}
+.nav .float-right{
+    float: right;
+}
+.nav a:hover{
+    background-color: #eee;
+}
+/* end nav */
+/* start after nav */
+.sec-part{
+    position: relative;
+}
+.sec-part img{
+    width: 100%;
+}
+.sec-part div{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    letter-spacing: 3px; 
+}
+.sec-part div b{
+    background-color: #000000d4;
+    color: white;
+    padding: 8px 16px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+/* end after nav */
+/* start projects */
+.projects{
+    margin: 70px 0px;
+}
+.common h2{
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.house{
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-top: 31px;
+}
+.house div{
+    position: relative;
+}
+.house div img{
+    width: 100%;
+}
+.house div p{
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    padding: 12px 24px;
+    color: white;
+    background: black;
+}
+/* .about-p{
+    word-spacing: 3px;
+} */
+.person{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 40px 0px;
+}
+.person div img{
+    width: 100%;
+    filter: grayscale(.5);
+}
+.person div img:hover{
+   filter: drop-shadow(2px 4px 6px black);
+}
+.person div h4{
+    opacity: 0.6;
+    font-weight: 500;
+}
+.person div h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+.person div .button input{
+    width: 100%;
+    padding: 6px 12px;
+    border: none;
+    font-size: 17px;
+}
+.person div .button input:hover{
+    background-color: gray;
+}
+/* end projects */
+/* start contact */
+.contact{
+    margin-top:40px ;
+    margin-bottom:20px ;
+}
+.form input{
+    width: calc(100% - 15px);
+    margin: 8px 0px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+.form  .form-button{
+    width: fit-content;
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+}
+.form  .form-button:hover{
+    color: black;
+    background-color: gray;
+}
+/* end contact */
+/* start map */
+.map img{
+    width: 100%;
+}
+/* end map */
+/* start footer */
+.footer{
+    background-color: black;
+    padding: 16px;
+}
+.footer p{
+    font-family: "Bungee Spice", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    text-align: center;
+}
+/* end footer */
